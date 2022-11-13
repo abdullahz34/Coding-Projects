@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newham Fitness Exercise Form</title>
+    <link rel="stylesheet" href="CSS/EF.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a href="Index.html" class="logo">Newham<span>Fitness</span></a>
+
+            <img id="mobile-cta" class="mobile-menu" src="Images/menu.svg" alt="Open navigation">
+
+            <nav>
+                <ul class="primaryNav">
+                    <li class="current"> <a href="Index.html">Home</a> </li>
+                    <li> <a href="Articles.html">Articles</a> </li>
+                    <li> <a href="ExerciseForm.html">Exercise Form</a> </li>
+                </ul>
+
+                <ul class="secondaryNav">
+                    <li> <a href="AboutUs.html">About us</a> </li>
+                    <li class="sign-up"> <a href="SignUp.html">Sign up</a> </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="header" ;>
+        <h1>How to deadlift</h1>
+    </div>
+    <div class="half-right">
+        <img src="Images/Deadlift1.webp">
+        <img src="Images/Deadlift2.webp">
+    </div>
+    <div class="half-left">
+        <p>The deadlift is one of the best total-body moves for building muscle and burning fat, but only if you do it right. Use strength coach Andy McKenzie’s form advice to nail the lift. To start, here’s an overview of the basic movement. “Standing with
+            your feet shoulder-width apart, grasp the bar with your hands just outside your legs,” says McKenzie. “Lift the bar by driving your hips forwards, keeping a flat back. Lower the bar under control – though once you get up to really heavy weights,
+            it’s OK to drop it on your final rep.”
+        </p>
+        <p>Of course, there’s much more to consider if you want perfect form (and believe us when you say you do). Here are some of the finer points to master. “Place your thumbs against the outer part of your thigh, and run both hands down until they touch
+            the bar,” says McKenzie. “This is your ideal hand position. “As for your grip, you have two choices: a double overhand grip or a mixed grip, where one hand grips the bar overhand and the other underhand. The mixed grip will allow you to lift
+            heavier, but make sure you switch hands regularly to prevent developing any muscular imbalances. “Always ensure you squeeze the bar as hard as you can, especially in heavier sets, before the bar leaves the floor. “Keep your head in a neutral
+            position throughout the lift. This is achieved by looking forwards with your eyes fixed to a spot on the ground about two to three metres ahead of your feet. And focus on keeping your chin up to keep your head in the best position for lifting.
+            “You want to maintain a strong spine from the beginning of the lift to the end, and the best way to achieve this is to keep your chest up throughout to prevent your torso hunching forwards over the bar. “You need to keep your abs braced throughout
+            the entire move to maintain an arched lower back and a strong and stable body, especially when attempting heavier lifts. Engage your core from the very start so your abs are tensed as you squat down to grip the bar. As you are about to lift
+            the bar, breathe deep into your belly, hold your breath, and brace your abs hard, like you’re about to be punched in the stomach.” “Your shoulders should remain slightly in front of your hands until the bar passes mid-thigh level, at which
+            point you want to retract your shoulder blades for a strong and stable torso.”
+
+        </p>
+    </div>
+
+
+
+
+
+
+
+
+    <script>
+        const mobileBtn = document.getElementById('mobile-cta')
+        nav = document.querySelector('nav')
+        mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+    </script>
+
+</body>
+
+</html>

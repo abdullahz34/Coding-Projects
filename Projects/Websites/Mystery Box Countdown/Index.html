@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="CSS/main.css">
+    <script src="https://kit.fontawesome.com/89bffb3f08.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main>
+        <button class="open-form">
+            Open form
+        </button>
+
+        <button class="close-form">
+            Close form
+        </button>
+
+
+        <div class="container">
+
+            <div class="header">
+                <h2>Create Account</h2>
+            </div>
+
+            <form class="form" id="form" name="form" onSubmit="return confirm('Are you sure you want to submit?')">
+
+                <div class="form-control">
+                    <label>Username</label>
+                    <input type="text" placeholder="Harrison123" id="username">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+
+                <div class="form-control">
+                    <label>Email</label>
+                    <input type="email" placeholder="Harrison@gmail.com" id="email">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+
+                <div class="form-control" onselect="highlightedText()">
+                    <label>Password</label>
+                    <input type="password" placeholder="Password" id="password">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+
+                <div class="form-control" onselect="highlightedText()">
+                    <label>Password Check</label>
+                    <input type="password" placeholder="Password two" id="password2">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+
+                <div class="form-checkbox" style="border:2px solid #f0f0f0; margin-bottom:20px; padding:5px;">
+                    <label style="display:inline-block; margin-bottom: 5px;">How did you find us?</label><br>
+                    <input type="checkbox" id="ytCheckbox">
+                    <label for="youtube">Youtube</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="checkbox" id="fbCheckbox">
+                    <label for="facebook">FaceBook</label><br>
+                    <input type="checkbox" id="friendCheckbox">
+                    <label for="friend">Friend</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="checkbox" id="otherCheckbox">
+                    <label for="other">Other</label><br>
+                    <i class="fas fa-check-circle" style="position:absolute; visibility:hidden;"></i>
+                    <small style="visibility:hidden;">Error message</small>
+                    <i class="fas fa-exclamation-circle" style="position:relative; visibility:hidden; color:#e74c3c; left:48px;" id="tempID"></i>
+                </div>
+
+                <div class="form-control">
+                    <label>Winning quote</label><br>
+                    <textarea type="textarea" id="wQuote" name="user_message" style="height: 8em; width:100%;  resize:none;" required>I had zero doubt I would win!</textarea>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+
+                <div class="form-radio" style="border:2px solid #f0f0f0; margin-bottom:20px; padding:5px;">
+                    <label style="display:inline-block; margin-bottom: 5px;">Do you reside in the UK?</label><br>
+                    <input type="radio" name="resident" id="radioYes">
+                    <label for="radioYes">Yes</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="resident" id="radioNo">
+                    <label for="radioNo">No</label><br>
+                    <small style="visibility:hidden;">Error message</small>
+                    <i class="fas fa-exclamation-circle" style="position:relative; visibility:hidden; color:#e74c3c; left:28px;" id="tempID2"></i>
+                </div>
+
+                <div class="form-dropdown" style="border:2px solid #f0f0f0; margin-bottom:20px; padding:5px;">
+                    <label style="display:inline-block; margin-bottom: 5px;">What is your preferred method of payment?</label><br>
+                    <select name="paymentMethod" id="payment">
+                <option value="">Select payment method</option>
+                <option value="debit">Debit/credit card</option>
+                <option value="paypal">Paypal</option>
+                <option value="phonepay">Mobile payment</option>
+            </select>
+                    <small style="visibility:hidden;">Error message</small>
+                    <i class="fas fa-exclamation-circle" style="position:relative; visibility:hidden; color:#e74c3c; left:2px;" id="tempID3"></i>
+                </div>
+
+                <div class="form-listbox" style="border:2px solid #f0f0f0; margin-bottom:20px; padding:5px;">
+                    <label style="display:inline-block; margin-bottom: 5px;">Delivery class?</label><br>
+                    <select name="deliveryClass" id="delivery" multiple="multiple">
+                <option value="Rm24">Royal Mail Tracked 24 </option>
+                <option value="Rm48">Royal Mail Tracked 48 </option>
+                <option value="RmSpecial">Royal Mail Special Delivery </option>
+                <option value="Rm1st">Royal Mail 1st Class </option>
+                <option value="Rm2nd">Royal Mail 2nd class</option>
+                <option value="RmSameday">Royal Mail Sameday </option>
+            </select>
+                    <br>
+                    <small style="visibility:hidden;">Error message</small>
+                    <i class="fas fa-exclamation-circle" style="position:relative; visibility:hidden; color:#e74c3c; left:2x;" id="tempID4"></i>
+                </div>
+
+
+                <button id="submitButton" onmouseover="changeColor1()" onmouseout="resetColor1()">Submit</button>
+                <button id="clearButton" type="reset" onmouseover="changeColor2()" onmouseout="resetColor2()">Clear form</button>
+
+            </form>
+        </div>
+</body>
+</main>
+
+
+<script src="JS/formValidation.js"></script>
+
+
+</html>

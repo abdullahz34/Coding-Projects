@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="20.962"
+   height="20.962"
+   viewBox="0 0 20.962001 20.962001"
+   version="1.1"
+   id="svg3"
+   sodipodi:docname="36e0ccce385d3c5d515e11f620b585dd.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs7" />
+  <sodipodi:namedview
+     id="namedview5"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0" />
+  <path
+     id="Icon_ionic-md-close"
+     data-name="Icon ionic-md-close"
+     d="M 20.958,2.1 18.858,0 10.481,8.381 2.1,0.004 0,2.104 l 8.381,8.377 -8.377,8.381 2.1,2.1 8.377,-8.381 8.381,8.381 2.1,-2.1 -8.381,-8.381 z"
+     fill="#ffffff" />
+</svg>

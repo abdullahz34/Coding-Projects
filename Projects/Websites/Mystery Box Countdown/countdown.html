@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown</title>
+    <link rel="stylesheet" href="CSS/countdownCSS.css">
+    <script src="https://kit.fontawesome.com/89bffb3f08.js" crossorigin="anonymous"></script>
+</head>
+
+<body onload="successfullyCreated()">
+    <main>
+        <h1>Mystery box opens in...</h1>
+        <div class="countdown">
+
+            <div class="countdown-block">
+                <span class="days time-elem">
+              <span class="top">00</span>
+                <span class="top-back">
+                <span>00</span>
+                </span>
+                <span class="bottom">00</span>
+                <span class="bottom-back">
+                <span>00</span>
+                </span>
+                </span>
+                <span class="title">Days</span>
+            </div>
+
+
+            <div class="countdown-block">
+                <span class="hours time-elem">
+              <span class="top">00</span>
+                <span class="top-back">
+                <span>00</span>
+                </span>
+                <span class="bottom">00</span>
+                <span class="bottom-back">
+                <span>00</span>
+                </span>
+                </span>
+                <span class="title">Hours</span>
+            </div>
+
+
+            <div class="countdown-block">
+                <span class="minutes time-elem">
+              <span class="top">00</span>
+                <span class="top-back">
+                <span>00</span>
+                </span>
+                <span class="bottom">00</span>
+                <span class="bottom-back">
+                <span>00</span>
+                </span>
+                </span>
+                <span class="title">Minutes</span>
+            </div>
+
+            <div class="countdown-block">
+                <span class="seconds time-elem">
+              <span class="top">00</span>
+                <span class="top-back">
+                <span>00</span>
+                </span>
+                <span class="bottom">00</span>
+                <span class="bottom-back">
+                <span>00</span>
+                </span>
+                </span>
+                <span class="title">Seconds</span>
+            </div>
+
+        </div>
+
+        <ul class="exterminate">
+            <p>You can exterminate this page with: </p>
+            <button onClick="document.write('Website exterminated, refresh to reverse time')">Exterminate</button>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="JS/countdownScript.js"></script>
+</body>
+
+
+
+
+</html>

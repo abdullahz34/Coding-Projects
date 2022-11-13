@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins";
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: url('../images/bg-stars.svg'), hsl(249, 18%, 12%);
+    height: 100vh;
+    margin: 0;
+}
+
+main {
+    height: 175vh;
+    background: url(../images/pattern-hills.svg) no-repeat 0 bottom;
+    background-size: contain;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.container {
+    display: none;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    overflow: hidden; // Ensures that the header border does not overflow out of the container
+    width: 400px;
+    max-width: 100%;
+}
+
+.header {
+    background-color: hsl(237, 18%, 59%);
+    border-bottom: 1px solid #f0f0f0;
+    padding: 20px 40px;
+    text-align: center;
+}
+
+.header h2 {
+    margin: 0;
+}
+
+.form {
+    padding: 30px 40px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px; // Creates space for the "error message" text
+    position: relative;
+}
+
+.form-control input:focus {
+    outline: 0;
+    border-color: #777;
+}
+
+.form-control label {
+    display: inline-block; // Need to set it to inline-block so margin-bottom can be affected
+    margin-bottom: 5px;
+}
+
+.form-control input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+}
+
+.form-control.success input {
+    border-color: #2ecc71;
+}
+
+.form-control.error input {
+    border-color: #e74c3c;
+}
+
+.form-control i {
+    visibility: hidden;
+    position: absolute; // Makes sure the icons are set in stone, and therefore can adjust positon without impacting nearby text
+    top: 40px;
+    right: 10px;
+}
+
+.form-control.success i.fa-check-circle {
+    color: #2ecc71;
+    visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+    color: #e74c3c;
+    visibility: visible;
+}
+
+.form-control small {
+    color: #e74c3c;
+    visibility: hidden;
+    position: absolute; // Clears out blank space underneath it so it looks more clean, and once again lets it stay without affecting nearby text
+    bottom: 0;
+    left: 0;
+}
+
+.form-control.error small {
+    visibility: visible;
+}
+
+.form button {
+    background-color: hsl(237, 18%, 59%);
+    border: 2px solid hsl(235, 20%, 25%);
+    border-radius: 4px;
+    display: block;
+    font-size: 16px;
+    font-family: inherit;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.open-form {
+    font-family: inherit;
+    font-size: 1.2rem;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    background: hsl(235, 20%, 25%);
+    border: 2px solid darken(palevioletred, 15%);
+    padding: 30px 60px;
+    border-radius: 45px;
+    color: hsl(345, 95%, 68%);
+    overflow: hidden;
+    box-shadow: 0 2px 4px darkgray;
+    transition: all 0.2s ease-in;
+    z-index: 1;
+    margin-bottom: 15px;
+}
+
+.close-form {
+    font-family: inherit;
+    font-size: 1.2rem;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    background: hsl(235, 20%, 25%);
+    border: 2px solid darken(palevioletred, 15%);
+    padding: 30px 60px;
+    border-radius: 45px;
+    color: hsl(345, 95%, 68%);
+    overflow: hidden;
+    box-shadow: 0 2px 4px darkgray;
+    transition: all 0.2s ease-in;
+    z-index: 1;
+    margin-bottom: 15px;
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    background-image: radial-gradient(circle closest-side, white, lighten(palevioletred, 15%));
+    width: 1px;
+    height: 1px;
+    z-index: 3;
+    animation-name: ripple;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+    &:hover {
+        transform: scale(1.01);
+        box-shadow: 0 6px 4px darkgray;
+    }
+}
+
+@keyframes ripple {
+    0% {
+        transform: scale(0, 0);
+        opacity: 0;
+    }
+    75% {
+        transform: scale(450, 450);
+        opacity: 0.75;
+    }
+    100% {
+        transform: scale(700, 700);
+        opacity: 0;
+    }
+}

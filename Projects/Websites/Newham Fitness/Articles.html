@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newham Fitness Articles</title>
+    <link rel="stylesheet" href="CSS/ArticlesSS.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a href="Index.html" class="logo">Newham<span>Fitness</span></a>
+
+            <img id="mobile-cta" class="mobile-menu" src="Images/menu.svg" alt="Open navigation">
+
+            <nav>
+                <ul class="primaryNav">
+                    <li class="current"> <a href="Index.html">Home</a> </li>
+                    <li> <a href="Articles.html">Articles</a> </li>
+                    <li> <a href="ExerciseForm.html">Exercise Form</a> </li>
+                </ul>
+
+                <ul class="secondaryNav">
+                    <li> <a href="AboutUs.html">About us</a> </li>
+                    <li class="sign-up"> <a href="SignUp.html">Sign up</a> </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="header">
+        <H1>Progessive Overload Article</H1>
+    </div>
+
+    <p>Progressive overload is when you gradually increase the weight, frequency, or number of repetitions in your strength training routine. This challenges your body and allows your musculoskeletal system to get stronger. Although progressive overload
+        is usually used in strength training, the same idea can be applied to any type of exercise, including cardiovascular endurance exercises like running. By changing up your workouts and adding additional tension to your muscles, you can avoid plateauing,
+        which is when your body adapts to the type of exercise you’re doing. With progressive overload, you may notice you feel fitter and stronger.</p>
+
+    <div class="Subheader1">
+        <h3>How does progressive overload benefit training?</h3>
+    </div>
+    <p>Doing the same workouts over and over or using the same amount of weight every time you strength train can lead to your body plateauing. You may be able to easily lift weight that once was challenging, and you likely don’t notice any soreness — or
+        any progress being made. While a plateau can be seen as a positive sign that means you’ve made some gains in your fitness journey, it also signals that it’s time to mix things up. Progressive overload benefits your training because you’ll avoid
+        a plateau. By changing or progressing in your workouts, you’ll keep your muscles challenged and you’ll get stronger. For example, in the first month of strength training, you might perform 10 repetitions at one weight. Then, the next month, you’d
+        perform 12 reps of the exercise. Or maybe you’d stick to 10 reps but increase the weight you’re using instead. A 2011 studyTrusted Source published in the European Journal of Applied Physiology tested a progressive overload regimen. The researchers
+        observed 83 people over a period of 12 weeks as they performed a series of arm strengthening exercises. Researchers found progressive overload — gradually increasing the weight and number of repetitions of exercises — to be effective for increasing
+        bicep strength and muscle growth in both men and women.</p>
+
+    <div class="Subheader2">
+        <h3>What are limitations of progressive overload?</h3>
+    </div>
+    <p>One drawback of progressive overload training is that it must be done gradually. It can be dangerous to increase the load or frequency of your training too quickly, which can lead to injury. You may not notice changes as immediately with this type
+        of training as with others. But it’s the safest way to progress. Working with a certified personal trainer (either in a gym or online) who can customize a progressive training routine for you is the most effective and safest way to meet your fitness
+        goals.
+    </p>
+    <div class="Subheader3">
+        <h3>Examples of progressive overload training</h3>
+    </div>
+    <p>You can add progressive overload to your training routine in different ways. This depends on your fitness level and types of workouts you do. Below are general examples of progressive overload.</p>
+
+    <div class="Subheader4">
+        <h4>Increase Volume</h4>
+    </div>
+    <ul>
+        <li><b>Week 1</b> Perform 10-12 squats, with or without weight.</li>
+        <li><b>Week 3</b> Perform 12–15 squats, with or without weight.</li>
+        <li><b>Week 5</b> Perform 15 squats, with or without weight.</li>
+    </ul>
+    <div class="Subheader5">
+        <h4>Increase weight used</h4>
+    </div>
+    <ul>
+        <li><b>Week 1</b> Perform bicep curls with 10- or 12-pound weights.</li>
+        <li><b>Week 4</b> Perform bicep curls with 12- or 15-pound weights.</li>
+        <li><b>Week 8</b> Perform bicep curls with 15- or 18-pound weights.</li>
+    </ul>
+    <div class="Subheader6">
+        <h4>Increase mileage in running</h4>
+    </div>
+    <ol>
+        <li><b>Week 1</b> Run 20 minutes at a light to moderate pace, 2 days per week.</li>
+        <li><b>Week 3</b> Run 30 minutes at a light to moderate pace, 2 days per week</li>
+        <li><b>Week 5</b> Run 30-40 minutes a light to moderate pace, 3 days per week.</li>
+    </ol>
+    <p class="pt">A certified personal trainer from <span>Newham Fitness</span> can create a plan that's customized to your goals.</p>
+
+    <script>
+        const mobileBtn = document.getElementById('mobile-cta')
+        nav = document.querySelector('nav')
+        mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+    </script>
+
+</body>
+
+</html>

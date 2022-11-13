@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newham Fitness Articles</title>
+    <link rel="stylesheet" href="CSS/ArticlesSS.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a href="Index.html" class="logo">Newham<span>Fitness</span></a>
+
+            <img id="mobile-cta" class="mobile-menu" src="Images/menu.svg" alt="Open navigation">
+
+            <nav>
+                <ul class="primaryNav">
+                    <li class="current"> <a href="Index.html">Home</a> </li>
+                    <li> <a href="Articles.html">Articles</a> </li>
+                    <li> <a href="ExerciseForm.html">Exercise Form</a> </li>
+                </ul>
+
+                <ul class="secondaryNav">
+                    <li> <a href="AboutUs.html">About us</a> </li>
+                    <li class="sign-up"> <a href="SignUp.html">Sign up</a> </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <h1 style="text-align: center;">Sign up form</h1>
+    <hr>
+    <div>
+        <h2 style="text-align: center">Personal Details</h2>
+        <form style="text-align:center">
+            <label for="sname">Surname:&nbsp;</label>
+            <input type="text" id="sname" name="sname" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="fname">First name:&nbsp;</label>
+            <input type="text" id="fname" name="fname" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="email">Email:&nbsp;</label>
+            <input type="text" id="email" name="Email" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="address">Address:&nbsp;</label>
+            <input type="text" id="address" name="address" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <Br>
+            <br>
+            <label for="age" id="age" name="age" required>Age</label>
+            <input type="date" id="age" name="age" required><br>
+            <br>
+            <label for="paymentOption">Please select your preferred method of payment</label><br>
+            <select name="selectMethod" id="paymentMethod">
+                <option value="cash">Cash</option>
+                <option value="cheque">Cheque</option>
+                <option value="credOrdeb">Credit or Debit card</option>
+                <option value="paypal">Paypal</option>
+            </select><br>
+
+            <button type="submit" value="submit" class="submit-cta">Submit</button>
+
+        </form>
+
+        <img src="Images/horizontalSignup.jpg" alt="" width="100%">
+
+
+
+
+
+
+
+
+        <script>
+            const mobileBtn = document.getElementById('mobile-cta')
+            nav = document.querySelector('nav')
+            mobileBtnExit = document.getElementById('mobile-exit');
+
+            mobileBtn.addEventListener('click', () => {
+                nav.classList.add('menu-btn');
+            })
+            mobileBtnExit.addEventListener('click', () => {
+                nav.classList.remove('menu-btn');
+            })
+        </script>
+
+</body>
+
+</html>

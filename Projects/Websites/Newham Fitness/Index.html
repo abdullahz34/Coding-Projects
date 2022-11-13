@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newham Fitness Home</title>
+    <link rel="stylesheet" href="CSS/main.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a href="Index.html" class="logo">Newham<span>Fitness</span></a>
+
+            <img id="mobile-cta" class="mobile-menu" src="Images/menu.svg" alt="Open navigation">
+
+            <nav>
+                <ul class="primaryNav">
+                    <li class="current"> <a href="Index.html">Home</a> </li>
+                    <li> <a href="Articles.html">Articles</a> </li>
+                    <li> <a href="ExerciseForm.html">Exercise Form</a> </li>
+                </ul>
+
+                <ul class="secondaryNav">
+                    <li> <a href="AboutUs.html">About us</a> </li>
+                    <li class="sign-up"> <a href="SignUp.html">Sign up</a> </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <div class="left-col">
+                <p class="subhead">Health is Wealth</p>
+                <h1>Newham Fitness, for all your fitness needs!</h1>
+                <div class="hero-cta">
+                    <a href="SignUp.html" class="primary-cta">Sign up now!</a>
+                </div>
+            </div>
+        </div>
+        <img src="Images/FrontpageImage.jpg" class="hero-img" alt="Illustration">
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <ul class="features-list">
+                <li>24/7 Gym</li>
+                <li>Supportive Personal Trainers</li>
+                <li>Free articles</li>
+                <li>Free form advice</li>
+            </ul>
+            <img src="Images/GymHappySection2.jpg" alt="Happy gym-goers">
+        </div>
+    </section>
+
+    <section class="testimonials-section">
+        <div class="container">
+            <ul class="quotes-list">
+                <li class="arnold">
+                    <img src="Images/arnold-schwarzenegger.jpg" alt="Arnold Schwarzenegger">
+
+                    <blockquote>I love my time at the gym here, everyone is so helpful. The fitness resources are top notch too!</blockquote>
+                    <cite>- Arnold Schwarzenegger</cite>
+                </li>
+                <li class="sylvester">
+                    <img src="Images/Sylvester-stallone.jpg" alt="Sylvester Stallone">
+
+                    <blockquote>I got huge for my movies at this gym!</blockquote>
+                    <cite>- Sylvester Stallone</cite>
+                </li>
+                <li class="jerry">
+                    <img src="Images/JerryMouse.webp" alt="Jerry">
+
+                    <blockquote>Tom couldn't stand a chance against me once I started using this website!</blockquote>
+                    <cite>- Jerry the mouse</cite>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-left">
+                <h2 class="contact-logo">Contact</h2>
+
+                <form action="">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your email">
+
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+                    <input type="submit" class="send-message-cta" value="Send message">
+                </form>
+            </div>
+            <div class="contact-right">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2481.5529184614707!2d0.0067174159259142975!3d51.53975951615745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a636c3872d0f%3A0x830cf1c69c4310b9!2sNewham%20College%20(Stratford%20campus)!5e0!3m2!1sen!2suk!4v1648756440197!5m2!1sen!2suk"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+    <script>
+        const mobileBtn = document.getElementById('mobile-cta')
+        nav = document.querySelector('nav')
+        mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+    </script>
+
+
+</body>
+
+</html>
